@@ -2,7 +2,6 @@
 
 An Android application built for the MTS hackathon on 18 to 20 March 2025, from a technical specification provided by MTS. The application communicates with connected hardware over the network, so it uses both an HTTP client and an MQTT client.
 
-The application lives in the `MTSHackaton-master/` directory. The root of the repository only carries this file.
 
 ## Features
 
@@ -44,7 +43,7 @@ None at build time. Endpoints and credentials are configured inside the applicat
 
 ```bash
 git clone https://github.com/glcskl/hackathonspacemtsminsk.git
-cd hackathonspacemtsminsk/MTSHackaton-master
+cd hackathonspacemtsminsk
 ```
 
 Open the directory in Android Studio and let it resolve the Gradle dependencies, or build from the command line:
@@ -72,17 +71,16 @@ adb shell am start -n ry.tech.mts_hackaton/.MainActivity
 ## Project structure
 
 ```
-MTSHackaton-master/
-  app/
-    build.gradle     application module
-    src/main/
-      java/ry/tech/mts_hackaton/   application code
-      res/layout/                  XML layouts
-      res/menu/                    menu resources
-      res/mipmap/                  launcher icons
-  build.gradle       root build configuration
-  settings.gradle    module list
-  gradle.properties  Gradle settings
+app/
+  build.gradle     application module
+  src/main/
+    java/ry/tech/mts_hackaton/   application code
+    res/layout/                  XML layouts
+    res/menu/                    menu resources
+    res/mipmap/                  launcher icons
+build.gradle       root build configuration
+settings.gradle    module list
+gradle.properties  Gradle settings
 ```
 
 ## SDK versions
